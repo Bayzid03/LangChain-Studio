@@ -1,7 +1,3 @@
-✨ *Calendar & Email Assistant with LangChain & Gemini* ✨
-
----
-
 # 📅✉️ Calendar & Email Assistant with LangChain & Gemini
 
 An intelligent, AI-powered assistant that helps you **schedule events**, **manage your calendar**, and **handle emails** — all through natural language commands.
