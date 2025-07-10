@@ -2,7 +2,6 @@
 
 ---
 
-```markdown
 # 📅✉️ Calendar & Email Assistant with LangChain & Gemini
 
 An intelligent, AI-powered assistant that helps you **schedule events**, **manage your calendar**, and **handle emails** — all through natural language commands.
@@ -41,7 +40,7 @@ project/
 
 1️⃣ **Clone the repository**
 ```bash
-git clone https://github.com/Bayzid03/calendar-email-assistant.git
+git clone https://github.com/Bayzid03/LangChain-Studio/tree/main
 cd calendar-email-assistant
 ````
 
