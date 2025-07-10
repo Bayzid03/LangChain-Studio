@@ -127,5 +127,3 @@ If you find this project useful, give it a ⭐️ on GitHub — it really helps!
 ---
 
 *Built with ❤️ using LangChain & Google Gemini.*
-
-```
