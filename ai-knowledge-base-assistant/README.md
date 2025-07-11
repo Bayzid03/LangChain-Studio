@@ -94,21 +94,11 @@ Found answer based on docs: This is a sample letter written for demonstration pu
 Sources:
 data/letter.pdf
 ```
-
----
-
-## ✏️ Customize
-
-* Add or replace files in `data/`
-* Adjust chunk size & embedding settings in `tools.py`
-* Extend with more tools (e.g., summary, export)
-
 ---
 
 ## 📄 License
 
 MIT License — free to use and modify.
-
 ---
 
 ⭐️ **If you like this project, please star it — it helps!**
