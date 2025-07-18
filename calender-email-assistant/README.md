@@ -24,7 +24,7 @@ Built with:
 project/
 ├── main.py                # Entry point: runs the assistant
 ├── tools.py               # Custom tools for calendar & email actions
-├── assistant\_output.py    # Pydantic model defining structured assistant response
+├── assistant_output.py    # Pydantic model defining structured assistant response
 ├── requirements.txt       # Python dependencies
 └── .env                   # Environment variables
 
