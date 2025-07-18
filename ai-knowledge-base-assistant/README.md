@@ -32,9 +32,9 @@ Ideal for small teams, internal documentation, or learning how to build retrieva
 ai-knowledge-base-assistant/
 ├── main.py                # Runs the assistant loop
 ├── tools.py               # Tools to load & search documents
-├── assistant\_output.py    # Structured output model
+├── assistant_output.py    # Structured output model
 ├── data/                  # Put your PDFs or text files here
-├── vector\_store/          # Saved embeddings index
+├── vector_store/          # Saved embeddings index
 └── requirements.txt       # Dependencies
 
 ````
