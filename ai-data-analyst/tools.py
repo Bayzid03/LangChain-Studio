@@ -47,3 +47,10 @@ def save_log(text: str):
     fname.write_text(text)
     
     return str(fname)
+
+tools = [
+    Tool("query_data",query_data,"Run pandas query on sales data"),
+    Tool("quick_stats",quick_stats,"Compute sum or avg of a column"),
+    Tool("plot_timeseries",plot_timeseries,"Generate Revenue or Unit Charts"),
+    Tool("save_log",save_log,"Save the Transcript")
+]
