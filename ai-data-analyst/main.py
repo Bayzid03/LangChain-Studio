@@ -15,11 +15,11 @@ parser = PydanticOutputParser(pydantic_object=AnalysisOutput)
 
 # Prompt template with placeholders and formatting instructions
 prompt = ChatPromptTemplate.from_messages([
-    ("system", SYSTEM_PROMPT),
-    ("placeholder", "{chat_history}"),
-    ("human", "{query}"),
+    ("system", SYSTEM_PROMPT),          # It sets the AI's role using System Prompt
+    ("placeholder", "{chat_history}"),  # Injects previous messages so the model remembers what's already been discussed.
+    ("human", "{query}"),               # Adds the current user QS.
     ("placeholder", "{agent_scratchpad}")
-]).partial(format_instructions=parser.get_format_instructions())
+]).partial(format_instructions=parser.get_format_instructions()) # Adds format instructions based on 'AnalysisOutput' schema.
 
 # Create the tool-calling agent
 agent = create_tool_calling_agent(llm, prompt, tools)
@@ -32,15 +32,19 @@ while True:
     q = input("\nYou: ")
     if q.lower() == "exit":
         break
-    chat_history.append(HumanMessage(content=q))
+    chat_history.append(HumanMessage(content=q))  # Adds user question to the 'chat_history' list as a HumanMessage.
     
     response = executor.invoke({"query": q, "chat_history": chat_history})
     
     try:
         ans = parser.parse(response["output"])
-        print("\nInsights:", ans.answer)
+        print("\nInsights:", ans.answer) #  Prints the AI's main answer.
         if ans.chart_path:
             print("Chart Saved:", ans.chart_path)
-        chat_history.append(AIMessage(content=ans.answer))
+        chat_history.append(AIMessage(content=ans.answer))   # Adds the AI's answer to the 'chat_history' list as an AIMessage.
     except Exception as e:
         print("Parse Error:", e, "\nRaw:", response["output"])
+
+
+# Key notes:
+# {agent_scratchpad} is the agent's internal memory where it tracks its reasoning steps, tool usage, and intermediate outputs during multi-turn interactions.
