@@ -10,7 +10,7 @@ from schema import ApplicationOutput
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
     temperature=0.2,
-    max_output_tokens=1500,
+    max_output_tokens=2500,
 )
 
 parser = PydanticOutputParser(pydantic_object=ApplicationOutput)
