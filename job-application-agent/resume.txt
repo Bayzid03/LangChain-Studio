@@ -1,0 +1,28 @@
+Name: Bayzid Hossain
+Email: bayzid.dev@example.com  
+Phone: +880-123456789  
+Location: Dhaka, Bangladesh  
+
+Objective:  
+Detail-driven Python developer with a strong grasp on modular AI/data pipelines, prompt engineering, and automation. Looking to apply scalable, production-grade tooling in a collaborative engineering team.
+
+Skills:  
+- Python (pathlib, logging, typing, modular design)  
+- Bash scripting and automation  
+- LangChain, CrewAI, agent-oriented workflows  
+- Git, VS Code, environment setup, developer tooling  
+- Data handling, schema alignment, file I/O optimization  
+
+Experience:  
+AI Tools Developer — Freelance (2024–Present)  
+- Built CLI and agent tools for resume parsing, application tracking, and schema-aligned document generation  
+- Refactored legacy file handlers using pathlib and logging best practices  
+- Scaffolded modular AI assistants using bash and prompt chaining
+
+Python Engineer — TechNova (2022–2024)  
+- Developed microservices and internal tools for DevOps automation  
+- Led refactoring of file systems for cross-platform compatibility  
+- Mentored junior engineers on testable, maintainable code
+
+Education:  
+B.Sc. in Computer Science, University of Dhaka (2018–2022)
