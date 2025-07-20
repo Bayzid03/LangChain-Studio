@@ -20,3 +20,17 @@ def save_application(resume: str, cover_letter: str, job_title: str):
     (folder / f"{base_name}_cover_letter.txt").write_text(cover_letter, encoding="utf-8") #Write cover letter
 
     return f"Saved application for {job_title} with resume and cover letter."
+
+read_tool = Tool(
+    name="read_file",
+    func=read_file,
+    description="Read the plain text from a given file path."
+)
+
+save_tool = Tool(
+    name="save_application",
+    func=save_application,
+    description="Saves the resume and cover letter to files with a timestamp in the applications folder."
+)
+
+tools = [read_tool, save_tool]
