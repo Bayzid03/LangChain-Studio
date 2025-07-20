@@ -1,0 +1,23 @@
+Job Title: Backend Python Developer – AI Infrastructure  
+Company: DataStack.ai  
+Location: Remote  
+Description:  
+We’re seeking a Python developer who can help us expand our agent-based workflow engine. You’ll work closely with prompt engineers, data scientists, and product leads to build modular pipelines that support real-time inference and dynamic task execution.
+
+Responsibilities:
+- Refactor and optimize existing codebase using modern Python tools  
+- Design file I/O and logging layers with scalable architecture  
+- Collaborate across teams to ship reproducible AI tooling  
+- Maintain schema-compliant APIs and application logic  
+- Contribute to bash-based CLI utilities for developers
+
+Requirements:
+- Strong Python (typing, logging, pathlib, modular design)  
+- Experience with agent-based AI frameworks like LangChain or CrewAI  
+- Comfortable writing bash scripts and managing environment setup  
+- Familiarity with prompt engineering and structured output  
+- Bonus: Experience refactoring legacy projects into modern scaffolding
+
+---
+
+Would you like the resume auto-tailored to this job description or want help generating the ideal output preview with your own schema? You’re literally one CLI call away.
