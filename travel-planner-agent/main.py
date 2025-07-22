@@ -35,3 +35,12 @@ while True:
         "chat_history": chat_history,
         "query": user_input,
     })
+    try:
+        output = parser.parse(response["output"])
+        print("Itinerary:", output.itinerary)
+        print("Highlights:", output.highlights)
+        print("Saved Path:", output.saved_path)
+        chat_history.append(AIMessage(content=str(output)))
+    except Exception as e:
+        print("Error parsing response:", e)
+        print("Response:", response["output"])
