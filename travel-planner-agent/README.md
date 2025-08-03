@@ -22,7 +22,7 @@ An intelligent travel assistant that creates **personalized multi-day itinerarie
 
 ## 🏗️ Architecture
 
-```
+``` mermaid
 User Query → LangChain Agent → Google Gemini AI → Travel Plan → Auto-Save Tool
      ↓                                              ↓
 Chat History                                   Structured JSON
@@ -160,3 +160,4 @@ MIT License - See [LICENSE](LICENSE) for details.
 ---
 
 **Smart travel planning made simple with AI** 🗺️✨
+
